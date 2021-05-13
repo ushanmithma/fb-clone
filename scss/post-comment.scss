@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$clr-gray: #626669;
+$clr-lightgray: hsl(220, 7%, 87%);
+$clr-comment: #f0f2f5;
+$clr-comment-now: #e7f3ff;
+$spacer-out: 0.78em;
+
+.clr-gray {
+    color: $clr-gray;
+}
+
+.සිංහල {
+    font-family: 'Noto Sans Sinhala', sans-serif;
+}
+
+.link {
+    color: #2e89ff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-section {
+
+    > div {
+        margin: $spacer-out;
+    }
+
+    .comment {
+        display: flex;
+
+        .avatar {
+            min-width: 42px;
+            min-height: 42px;
+            width: 42px;
+            height: 42px;
+            margin-right: 0.4em;
+
+            img {
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+
+        .comment-data {
+
+            .comment-content {
+                padding: 0.4em 0.7em;
+                background-color: $clr-comment;
+                border-radius: 1.1em;
+                display: inline-block;
+                
+                p.commenter {
+                    font-size: 0.9em;
+                    line-height: 1.2;
+                }
+            }
+            
+            .comment-actions {
+                font-size: 0.87em;
+                font-weight: bolder;
+                color: $clr-gray;
+                display: flex;
+                margin-bottom: $spacer-out;
+
+                p.time-ago {
+                    padding: 0.4em 0 0 0.8em;
+                    font-weight: normal;
+                }
+
+                p.like {
+                    padding: 0.4em 0 0 0.8em;
+                }
+
+                p.reply {
+                    padding-top: 0.4em;
+                }
+                
+                > p {
+                    margin-right: 1.5em;
+                }
+
+                .comment-reactions {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    
+                    > p {
+                        padding-top: 0.4em;
+                        vertical-align: middle;
+                        margin-right: 0.2em;
+                        font-weight: normal;
+                    }
+                    
+                    div {
+                        padding-top: 0.3em;
+                        display: flex;
+
+                        img {
+                            vertical-align: middle;
+                            width: 20px;
+                            height: 20px;
+                            border: 2px solid white;
+                            border-radius: 100%;
+                        }
+
+                        img + img {
+                            margin-left: -4px;
+                        }
+            
+                        img:nth-child(1) {
+                            z-index: 3;
+                        }
+                        
+                        img:nth-child(2) {
+                            z-index: 2;
+                        }
+                        
+                        img:nth-child(3) {
+                            z-index: 1;
+                            margin-right: -2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .reply-comment {
+        margin-left: calc(40px + 0.4em);
+        display: flex;
+
+        .avatar {
+            min-width: 30px;
+            min-height: 30px;
+            width: 30px;
+            height: 30px;
+            margin-right: 0.4em;
+
+            img {
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+
+        .comment-data {
+
+            .comment-content {
+                padding: 0.4em 0.7em;
+                background-color: $clr-comment;
+                border-radius: 1.1em;
+                display: inline-block;
+                
+                p.commenter {
+                    font-size: 0.9em;
+                    line-height: 1.2;
+                }
+            }
+            
+            .comment-actions {
+                font-size: 0.87em;
+                font-weight: bold;
+                color: $clr-gray;
+                display: flex;
+                margin-bottom: $spacer-out;
+
+                p.time-ago {
+                    padding: 0.4em 0 0 0.8em;
+                    font-weight: normal;
+                }
+
+                p.like {
+                    padding: 0.4em 0 0 0.8em;
+                }
+
+                p.reply {
+                    padding-top: 0.4em;
+                }
+                
+                > p {
+                    margin-right: 1.5em;
+                }
+
+                .comment-reactions {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    
+                    > p {
+                        padding-top: 0.4em;
+                        vertical-align: middle;
+                        margin-right: 0.2em;
+                        font-weight: normal;
+                    }
+                    
+                    div {
+                        padding-top: 0.3em;
+                        display: flex;
+
+                        img {
+                            vertical-align: middle;
+                            width: 20px;
+                            height: 20px;
+                            border: 2px solid white;
+                            border-radius: 100%;
+                        }
+
+                        img + img {
+                            margin-left: -4px;
+                        }
+            
+                        img:nth-child(1) {
+                            z-index: 3;
+                        }
+                        
+                        img:nth-child(2) {
+                            z-index: 2;
+                        }
+                        
+                        img:nth-child(3) {
+                            z-index: 1;
+                            margin-right: -2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
