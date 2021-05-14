@@ -87,28 +87,31 @@ body {
   font-weight: normal;
 }
 .comment-section .comment .comment-data .comment-actions .comment-reactions div {
-  padding-top: 0.3em;
+  margin-top: 0.3em;
   display: flex;
 }
-.comment-section .comment .comment-data .comment-actions .comment-reactions div img {
-  vertical-align: middle;
+.comment-section .comment .comment-data .comment-actions .comment-reactions div > div {
+  margin-top: 0;
   width: 20px;
   height: 20px;
   border: 2px solid white;
   border-radius: 100%;
 }
-.comment-section .comment .comment-data .comment-actions .comment-reactions div img + img {
+.comment-section .comment .comment-data .comment-actions .comment-reactions div > div + div {
   margin-left: -4px;
 }
-.comment-section .comment .comment-data .comment-actions .comment-reactions div img:nth-child(1) {
+.comment-section .comment .comment-data .comment-actions .comment-reactions div > div:nth-child(1) {
   z-index: 3;
 }
-.comment-section .comment .comment-data .comment-actions .comment-reactions div img:nth-child(2) {
+.comment-section .comment .comment-data .comment-actions .comment-reactions div > div:nth-child(2) {
   z-index: 2;
 }
-.comment-section .comment .comment-data .comment-actions .comment-reactions div img:nth-child(3) {
+.comment-section .comment .comment-data .comment-actions .comment-reactions div > div:nth-child(3) {
   z-index: 1;
   margin-right: -2px;
+}
+.comment-section .comment .comment-data .comment-actions .comment-reactions div img {
+  width: 100%;
 }
 .comment-section .reply-comment {
   margin-left: calc(40px + 0.4em);
@@ -167,28 +170,31 @@ body {
   font-weight: normal;
 }
 .comment-section .reply-comment .comment-data .comment-actions .comment-reactions div {
-  padding-top: 0.3em;
+  margin-top: 0.3em;
   display: flex;
 }
-.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div img {
-  vertical-align: middle;
+.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div > div {
+  margin-top: 0;
   width: 20px;
   height: 20px;
   border: 2px solid white;
   border-radius: 100%;
 }
-.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div img + img {
+.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div > div + div {
   margin-left: -4px;
 }
-.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div img:nth-child(1) {
+.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div > div:nth-child(1) {
   z-index: 3;
 }
-.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div img:nth-child(2) {
+.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div > div:nth-child(2) {
   z-index: 2;
 }
-.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div img:nth-child(3) {
+.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div > div:nth-child(3) {
   z-index: 1;
   margin-right: -2px;
+}
+.comment-section .reply-comment .comment-data .comment-actions .comment-reactions div img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=post-comment.css.map */
